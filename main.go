@@ -18,7 +18,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"https://izpdfgenerator.netlify.app/"},
+		AllowOrigins: []string{"https://izpdfgenerator.netlify.app"},
 		AllowMethods: []string{echo.GET, echo.POST, echo.OPTIONS},
 		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
 	}))
